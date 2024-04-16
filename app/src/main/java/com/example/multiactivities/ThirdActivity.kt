@@ -20,12 +20,9 @@ class ThirdActivity : AppCompatActivity() {
         val company = intent.getStringExtra("company")
 
 
-        findViewById<TextView>(R.id.NameBadge).text = "Nom: $name"
-        findViewById<TextView>(R.id.ProfessionBadge).text = "Profession: $profession"
-        findViewById<TextView>(R.id.CompanyBadge).text = "Société: $company"
-
-
-
+        findViewById<TextView>(R.id.NameBadge).text = name
+        findViewById<TextView>(R.id.ProfessionBadge).text = profession
+        findViewById<TextView>(R.id.CompanyBadge).text = company
 
         }
 }

@@ -19,12 +19,12 @@ class MainActivity : AppCompatActivity() {
     val submitButton = findViewById<Button>(R.id.submitButton);
 
         submitButton.setOnClickListener {
-        val nom = inputName.getText().toString();
+        val name = inputName.getText().toString();
         val profession = inputProfession.getText().toString();
         val company = inputCompany.getText().toString();
 
         val intent = Intent(this, SecondActivity::class.java)
-        intent.putExtra("name", nom)
+        intent.putExtra("name", name)
         intent.putExtra("profession", profession)
         intent.putExtra("company", company)
         startActivity(intent)

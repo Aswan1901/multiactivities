@@ -14,23 +14,23 @@ class SecondActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_second)
 
-        val displayName = intent.getStringExtra("name");
-        val displayProfession = intent.getStringExtra("profession")
-        val displaySociete = intent.getStringExtra("company")
+        val intentName = intent.getStringExtra("name");
+        val intentProfession = intent.getStringExtra("profession")
+        val intentCompany = intent.getStringExtra("company")
 
-        val name = findViewById<TextView>(R.id.textViewName);
-        val profession = findViewById<TextView>(R.id.textViewProfession);
-        val company = findViewById<TextView>(R.id.textViewSociete);
+        val textViewName = findViewById<TextView>(R.id.textViewName);
+        val textViewProfession = findViewById<TextView>(R.id.textViewProfession);
+        val textViewCompany = findViewById<TextView>(R.id.textViewSociete);
 
-        name.text = "$displayName";
-        profession.text = "$displayProfession";
-        company.text = "$displaySociete";
+        textViewName.text = "Nom : $intentName";
+        textViewProfession.text = "Profession : $intentProfession";
+        textViewCompany.text = "Société : $intentCompany";
 
         val submitButton = findViewById<Button>(R.id.submitButton);
         submitButton.setOnClickListener {
-            val nom = name.getText().toString();
-            val profession = profession.getText().toString();
-            val company = company.getText().toString();
+            val nom = textViewName.getText().toString();
+            val profession = textViewProfession.getText().toString();
+            val company = textViewCompany.getText().toString();
 
             val intent = Intent(this, ThirdActivity::class.java)
             intent.putExtra("name", nom)
