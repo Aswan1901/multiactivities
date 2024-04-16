@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+  >
+
+    <TextView
+        android:id="@+id/NameBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/ProfessionBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profession"
+        android:textSize="20sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/CompanyBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Société"
+        android:textSize="20sp"
+        android:padding="8dp" />
+
+</LinearLayout>
